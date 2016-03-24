@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <title>Angular Drill</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body ng-controller="myCtrl">
+
+        <form name="myForm">
+            <input type="text" name="myField"  ng-model="field" required minlength="5" />
+                <div ng-messages="myForm.myField.$error">
+                    <div ng-message="required">You did not enter a field</div>
+                    <div ng-message="minlength">The value entered is too short</div>
+                </div>
+        </form>
+
+        <div class="top">
+            <a name="top"></a>
+            <button ng-click="scrollTo('bottom')">Scroll to bottom</button>
+        </div>
+
+        <div class="bigOle">
+
+        </div>
+
+        <div class="bottom">
+            <a name="bottom"></a>
+            <button ng-click="scrollTo('top')">Scroll to bottom</button>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-messages/1.5.2/angular-messages.js"></script>
+        <script src="app.js" charset="utf-8"></script>
+        <script src="controller.js" charset="utf-8"></script>
+    </body>
+</html>
