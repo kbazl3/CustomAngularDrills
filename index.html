@@ -14,6 +14,27 @@
                     <div ng-message="minlength">The value entered is too short</div>
                 </div>
         </form>
+        <div ng-model="handle">
+            <h1>What is your twitter handle?</h1>
+            <input ng-model="handle">
+        </div>
+        <div class="alert" ng-if="handle.length !== characters">
+            Must be 5 characters!
+        </div>
+
+        <h1>twitter.com/ {{handle}}</h1>
+        <br>
+        <br>
+        <br>
+        <bt>
+        <h1>{{test}}</h1>
+        3000 | currency ==== {{3000 | currency}}
+        <br>
+        2016-03-25T05:11:53.163Z | date: "short" ==== {{date | date: "short"}}
+        <br>
+        {{person | json}} {person | json} Allows you to convert a JavaScript object into JSON string.
+        <br>
+        {{33232234324| number}} {33232234324| number} Formats a number as text.
 
         <div class="top">
             <a name="top"></a>

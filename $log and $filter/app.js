@@ -3,3 +3,7 @@
 // use every property that $log has to offer and log it to the console.
 //
 // use $filter to change a string to all uppercase. Use it again to make a string all lowercase
+
+//create a date in your controller and filter it in the view
+
+//filter a number into currency
