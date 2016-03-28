@@ -36,6 +36,11 @@
         <br>
         {{33232234324| number}} {33232234324| number} Formats a number as text.
 
+
+        <div class="chartz">
+            <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="true" chart-series="series"></canvas>
+
+        </div>
         <div class="top">
             <a name="top"></a>
             <button ng-click="scrollTo('bottom')">Scroll to bottom</button>
@@ -52,6 +57,8 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-messages/1.5.2/angular-messages.js"></script>
+        <script src="https://rawgit.com/nnnick/Chart.js/master/Chart.min.js"></script>
+        <script src="https://rawgit.com/jtblin/angular-chart.js/master/dist/angular-chart.min.js"></script>
         <script src="app.js" charset="utf-8"></script>
         <script src="controller.js" charset="utf-8"></script>
     </body>

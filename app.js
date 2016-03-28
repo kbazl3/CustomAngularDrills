@@ -1,4 +1,4 @@
-angular.module('app', ['ngMessages']);
+angular.module('app', ['ngMessages', 'chart.js']);
 
 //use ngMessages **
 //step1. link the ng messages cdn and add ngMessages as a dependency on the app in the square brackets
